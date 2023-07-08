@@ -2,10 +2,17 @@ import {useState} from 'react'
 import './App.css';
 
 
-const button =(props) =>{
-  
+const Statistics = (props) => {
+  /// ...
+  return(
+    <div>
+      {/* <StatisticLine text="good" value ={} />
+      <StatisticLine text="neutral" value ={...} />
+      <StatisticLine text="bad" value ={...} />
+      // ... */}
+    </div>
+  )
 }
-
 const App =() =>{
 // save clicks of each button to its own state 
 
@@ -54,12 +61,12 @@ const badHandler =() =>{
 </div>
       
    <div className='header'>
-      {/* {good} */}
+      
       <button onClick={goodHandler} >good</button>
-      {/* {neutral} */}
+      
       <button onClick={neutralHandler} >neutral</button>
       <button onClick={badHandler} >bad</button>
-      {/* {bad} */}
+      
    
       </div>
       
@@ -70,10 +77,13 @@ const badHandler =() =>{
       
     </div>
     <div className='allresult'>
-      <p>total :{total}</p>
+      <p>good    {good}</p>
+      <p>neutral   {neutral}</p>
+      <p>bad   {bad}</p>
+      <p>total :    {total}</p>
       <p>average: {average}</p>
       </div>
-     
+    
     </div>
 
    
